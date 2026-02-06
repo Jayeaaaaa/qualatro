@@ -2041,12 +2041,14 @@ local function beta_mix()
 		},
 		config = { extra = { chips = 40, x_mult = 4 } },
 		loc_vars = function(self, info_queue, card)
+			local cardarea = card.area
 			if
+				cardarea and
+				cardarea.cards and
 				card.rank and
 				card.rank >= 2 and
-				G.jokers and
-				#G.jokers.cards >= 2 and
-				G.jokers.cards[card.rank - 1].ability.name == 'Joker'
+				#cardarea.cards >= 2 and
+				cardarea.cards[card.rank - 1].ability.name == 'Joker'
 			then
 				return { vars = {
 					card.ability.extra.chips,
