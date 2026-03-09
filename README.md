@@ -1,4 +1,6 @@
-# Qualatro
+# Qualatro (JokerDisplay fork)
+
+Fork of Qualatro that adds support for the JokerDisplay mod: https://github.com/nh6574/JokerDisplay
 
 <img width="2004" height="934" alt="qualatro_logo" src="https://github.com/user-attachments/assets/aca63beb-6387-45fc-afa0-4d3045adf799" />
 
